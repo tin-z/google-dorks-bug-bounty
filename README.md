@@ -184,6 +184,14 @@ Credits to TakSec: https://taksec.github.io/google-dorks-bug-bounty/
 
 > inurl:"url=" | inurl:"return=" | inurl:"next=" | inurl:"redir=" | inurl:"ret=" | inurl:"r2=" | inurl:"http" | inurl:"%3Dhttp" | inurl:"%3D%2F" | inurl:"redirect"= | inurl:"redirecturl=" | inurl:"redirect_url=" | inurl:"returnurl=" | inurl:"relaystate=" | inurl:"forward=" | inurl:"forwardurl=" | inurl:"forward_url=" | inurl:"uri=" | inurl:"dest=" | inurl:"destination=" site:target.com | inurl:"page=" inurl:"&" inurl:"http" site:example.com
 
+### Open Redirect prone parameters & XSS Part1
+
+> inurl:return_to= | inurl:return_uri= | inurl:redirect_uri= | inurl:prev= | inurl:prev_page= | inurl:next_page= | inurl:site= | inurl:view= | inurl:back= | inurl:to= | inurl:source= | inurl:from= | inurl:continue= | inurl:continue_to= |inurl:location= | inurl:route= | inurl:follow= | inurl:success_url= | inurl:failure_url= | inurl:callback= | inurl:cb=
+
+### Open Redirect pron parameters & XSS Part2
+
+> site:"example[.]com" inurl:return_path | inurl:forward= | inurl:after= | inurl:done= | inurl:destination= | inurl:goto= | inurl:rurl= | inurl:target= | inurl:ref= | inurl:refer= | inurl:referrer= | inurl:endpoint= | inurl:home= | inurl:start= | inurl:finish=| inurl:result=| inurl:move= |inurl:step= | inurl:proceed=
+
 ### SQLi Prone Parameters
 
 > inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:target.com
