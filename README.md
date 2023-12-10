@@ -48,6 +48,14 @@ Credits to TakSec: https://taksec.github.io/google-dorks-bug-bounty/
 
 > site:target.com filetype:git | ext:git
 
+### Exposed Database Files
+
+> site:example.com ext:sql | ext:dbf | ext:mdb
+
+### BackUp and Old Files
+
+> site:example.com ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+
 ### Directory listings
 
 > site:target.com intext:"index of /"
@@ -182,7 +190,7 @@ Credits to TakSec: https://taksec.github.io/google-dorks-bug-bounty/
 
 ### Open Redirect prone parameters
 
-> inurl:"url=" | inurl:"return=" | inurl:"next=" | inurl:"redir=" | inurl:"ret=" | inurl:"r2=" | inurl:"http" | inurl:"%3Dhttp" | inurl:"%3D%2F" | inurl:"redirect"= | inurl:"redirecturl=" | inurl:"redirect_url=" | inurl:"returnurl=" | inurl:"relaystate=" | inurl:"forward=" | inurl:"forwardurl=" | inurl:"forward_url=" | inurl:"uri=" | inurl:"dest=" | inurl:"destination=" site:target.com | inurl:"page=" inurl:"&" inurl:"http" site:example.com
+> inurl:"url=" | inurl:"return=" | inurl:"next=" | inurl:"redir=" | inurl:"ret=" | inurl:"r2=" | inurl:"http" | inurl:"%3Dhttp" | inurl:"%3D%2F" | inurl:"redirect"= | inurl:"redirecturl=" | inurl:"redirect_url=" | inurl:"returnurl=" | inurl:"relaystate=" | inurl:"forward=" | inurl:"forwardurl=" | inurl:"forward_url=" | inurl:"uri=" | inurl:"dest=" | inurl:"src=http" | inurl:"r=http" | inurl:"destination=" site:target.com | inurl:"page=" inurl:"&" inurl:"http" site:example.com
 
 ### Open Redirect prone parameters & XSS Part1
 
@@ -457,6 +465,8 @@ Credits to TakSec: https://taksec.github.io/google-dorks-bug-bounty/
 > site:target.com intitle:"Welcome to Grafana"
 
 ### WordPress
+
+> site:example.com inurl:wp- | inurl:wp-content | inurl:plugins | inurl:uploads | inurl:themes | inurl:download
 
 > site:target.com inurl:/wp-admin/admin-ajax.php
 
