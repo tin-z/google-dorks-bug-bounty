@@ -2,9 +2,11 @@
 
 A list of Google Dorks for Bug Bounty, Web Application Security, and Pentesting
 
-<p>
-Credits to TakSec: https://taksec.github.io/google-dorks-bug-bounty/
-</p>
+Credits to: 
+ - https://github.com/mathis2001/mathis2001.github.io/ ([google, github, shodan dorks generator](https://dorks.s1rn3tz.ovh/))
+ - https://taksec.github.io/google-dorks-bug-bounty/
+ - https://github.com/bugcandy/google-dorks-bug-bounty
+ - https://github.com/bhataasim1/google-dorks-bug-bounty
 
 ---
 
